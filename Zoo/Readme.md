@@ -1,4 +1,4 @@
-# Project Name
+# Create A Zoo
 
 **Author**: Your Name(s) Goes Here
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
@@ -11,7 +11,7 @@
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/Zoo/PokemonSnip.JPG)
 
 <!-- Show them what looks like and how how to use the application.  -->
 
