@@ -8,7 +8,10 @@ namespace BuildAZoo
     {
         public virtual bool HasWings { get; set; } = true;
 
-        public abstract string Caws();
         public abstract bool Fly();
+        public virtual string Caws()
+        {
+            return "Caw";
+        }
     }
 }

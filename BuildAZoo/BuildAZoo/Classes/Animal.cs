@@ -9,7 +9,13 @@ namespace BuildAZoo
         public abstract int NumberOfLegs { get; set; }
         public abstract bool Carnivore { get; set; }
 
-        public abstract string Eat();
-        public abstract string Sleep();
+        public virtual string Eat()
+        {
+            return "nom nom";
+        }
+        public virtual string Sleep()
+        {
+            return "snor snor";
+        }
     }
 }
