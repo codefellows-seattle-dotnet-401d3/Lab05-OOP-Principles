@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Firetype : Pokeman // this is the inheritance thru pokeman
+   abstract class Firetype : Pokeman // this is the inheritance thru pokeman
     {
         public override int Height { get; set; } = 100;
         public override int Weight { get; set; } = 100;
