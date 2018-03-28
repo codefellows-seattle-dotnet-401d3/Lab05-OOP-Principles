@@ -8,7 +8,7 @@ namespace Lab05
     {
         public override string Type { get; } = "Beast";
         public abstract string Climate { get; }
-        public virtual bool Enchanted { get; set; } = false;
+        protected virtual bool Enchanted { get; set; } = false;
 
         public virtual string Enclosure(string materialType)
         {
