@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    public class DisplacerBeast : Monstrosity
+    public class DisplacerBeast : Monstrosity, IDarkvision
     {
         public override string Name { get; } = "DisplacerBeast";
         public override int HP { get; set; } = 42;
@@ -32,6 +32,18 @@ namespace Lab05
         public override void Transport()
         {
             //How to transport
+        }
+
+        public string Lowlight()
+        {
+            //Can see in lowlight
+            return "Lowlight";
+        }
+
+        public string Darvision()
+        {
+            //Can see in the dark
+            return "darkcision";
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    class ShockerLizzard : Fiend
+    class ShockerLizzard : Fiend, ITremorSense
     {
         public override string Name { get; } = "DisplacerBeast";
         public override int HP { get; set; } = 12;
@@ -39,6 +39,18 @@ namespace Lab05
         public override void Transport()
         {
             //How to transport
+        }
+
+        public string Dig()
+        {
+            //Can dig and burrow
+            return "burrow";
+        }
+
+        public string TremorSense()
+        {
+            //Can "see" through the ground
+            return "blindsight";
         }
     }
 }

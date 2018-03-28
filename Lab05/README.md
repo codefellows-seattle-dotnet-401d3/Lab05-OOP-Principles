@@ -1,6 +1,6 @@
 # unit test ATM
 
-A small app intended to explore the four OOP principles
+A small app intended to explore the four OOP principles + interfaces
 
 ## Getting Started
 
@@ -11,6 +11,8 @@ You will need to install and run VS2017 in order to run and use the app.
 ## Features
 
 This is an example hierarchy that includes inheritance abstraction and ecapsulation. I created a Zoo based ont the D&D 5th edition monster manual. At the top is the abstract class attraction. The monster types are derived from attraction into Beast and Monstrosity. Monstrosity is further derived into the abstract Fiend. Beast has two concreate classes Plesiosaurus, and Monkey while Monstrosity has DisplacerBeast. Fiend has Dopplganger, Dragon and ShockerLizzard.
+
+In the next lab we then added interfaces to our zoo.
 
 ## Resources and Links
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    class Dragon : Fiend
+    class Dragon : Fiend, IDarkvision, ITremorSense
     {
         public override string Name { get; } = "DisplacerBeast";
         public override int HP { get; set; } = 120;
@@ -39,6 +39,30 @@ namespace Lab05
         public override void Transport()
         {
             //How to transport
+        }
+
+        public string Lowlight()
+        {
+            //Can see in lowlight
+            return "Lowlight";
+        }
+
+        public string Darvision()
+        {
+            //Can see in the dark
+            return "darkcision";
+        }
+
+        public string Dig()
+        {
+            //Can dig and burrow
+            return "burrow";
+        }
+
+        public string TremorSense()
+        {
+            //Can "see" through the ground
+            return "blindsight";
         }
     }
 }
