@@ -9,8 +9,8 @@ namespace Lab05
         public override string Name { get; } = "Monkey";
         public override int HP { get; set; } = 12;
         public override string Climate { get; } = "Arborial";
-        public override bool Hostile { get => base.Hostile; set => base.Hostile = value; }
-        public override bool Enchanted { get => base.Enchanted; set => base.Enchanted = value; }
+        protected override bool Hostile { get => base.Hostile; set => base.Hostile = value; }
+        protected override bool Enchanted { get => base.Enchanted; set => base.Enchanted = value; }
 
         public override string Feed(int count, int hunger)
         {

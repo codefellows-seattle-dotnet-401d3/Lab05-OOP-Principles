@@ -4,13 +4,20 @@ using System.Text;
 
 namespace Lab05
 {
-    public class DisplacerBeast : Monstrosity, IDarkvision
+    class ShockerLizzard : Fiend, ITremorSense
     {
         public override string Name { get; } = "DisplacerBeast";
-        public override int HP { get; set; } = 42;
+        public override int HP { get; set; } = 12;
+        public override string SubType { get; set; }
         public override string Immunity { get; set; } = "Fire, Poison";
         public override string NativePlane => base.NativePlane;
         protected override bool Hostile { get => base.Hostile; set => base.Hostile = value; }
+
+        public override string[] Abilities()
+        {
+            string[] abs = new string[0];
+            return abs;
+        }
 
         public override int ThreatLevel(int strength)
         {
@@ -34,16 +41,16 @@ namespace Lab05
             //How to transport
         }
 
-        public string Lowlight()
+        public string Dig()
         {
-            //Can see in lowlight
-            return "Lowlight";
+            //Can dig and burrow
+            return "burrow";
         }
 
-        public string Darvision()
+        public string TremorSense()
         {
-            //Can see in the dark
-            return "darkcision";
+            //Can "see" through the ground
+            return "blindsight";
         }
     }
 }

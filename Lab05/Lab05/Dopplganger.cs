@@ -4,13 +4,25 @@ using System.Text;
 
 namespace Lab05
 {
-    public class Plesiosaurus : Beast
+    class Dopplganger : Fiend
     {
-        public override string Name { get; } = "Plesiosaurus";
+        public override string Name { get; } = "DisplacerBeast";
         public override int HP { get; set; } = 68;
-        public override string Climate { get; } = "Aquatic";
+        public override string SubType { get; set; }
+        public override string Immunity { get; set; } = "Fire, Poison";
+        public override string NativePlane => base.NativePlane;
         protected override bool Hostile { get => base.Hostile; set => base.Hostile = value; }
-        protected override bool Enchanted { get => base.Enchanted; set => base.Enchanted = value; }
+
+        public override string[] Abilities()
+        {
+            string[] abs = new string[0];
+            return abs;
+        }
+
+        public override int ThreatLevel(int strength)
+        {
+            return base.ThreatLevel(strength);
+        }
 
         public override string Feed(int count, int hunger)
         {
@@ -27,18 +39,6 @@ namespace Lab05
         public override void Transport()
         {
             //How to transport
-        }
-
-        public override string Diet()
-        {
-            //Pull idet from archive
-            string kibble = "kibble";
-            return kibble;
-        }
-
-        public override string Enclosure(string materialType)
-        {
-            return base.Enclosure(materialType);
         }
     }
 }
