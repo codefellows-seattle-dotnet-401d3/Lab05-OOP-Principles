@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    interface ITremorSense
+    public interface ITremorSense
     {
         string Dig();
         string TremorSense();

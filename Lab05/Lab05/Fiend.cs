@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    abstract class Fiend : Monstrosity
+    public abstract class Fiend : Monstrosity
     {
         abstract public string SubType { get; set; }
         protected virtual string Immunites { get; set; } = "None";
