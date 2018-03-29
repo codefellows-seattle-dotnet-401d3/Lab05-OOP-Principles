@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Lab05
 {
-    class ShockerLizzard : Fiend, ITremorSense
+    public class ShockerLizzard : Fiend, ITremorSense
     {
-        public override string Name { get; } = "DisplacerBeast";
+        public override string Name { get; } = "ShockerLizzard";
         public override int HP { get; set; } = 12;
         public override string SubType { get; set; }
         public override string Immunity { get; set; } = "Fire, Poison";

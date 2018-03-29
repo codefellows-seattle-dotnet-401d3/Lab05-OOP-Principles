@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    class Dragon : Fiend, IDarkvision, ITremorSense
+    public class Dragon : Fiend, IDarkvision, ITremorSense
     {
         public override string Name { get; } = "DisplacerBeast";
         public override int HP { get; set; } = 120;

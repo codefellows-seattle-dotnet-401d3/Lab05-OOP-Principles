@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05
 {
-    class Monkey : Beast
+    public class Monkey : Beast
     {
         public override string Name { get; } = "Monkey";
         public override int HP { get; set; } = 12;
