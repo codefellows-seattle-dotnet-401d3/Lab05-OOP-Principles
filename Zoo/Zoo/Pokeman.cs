@@ -14,5 +14,14 @@ namespace Zoo
 
         public abstract bool CatchThemAll();
 
+        // Need to test out problems and see if you can 
+        //one assert per method. 
+        //Assert.Equal(expect, result);
+        //dragon can jump.
+        //Weak aginst as a propertiy 
+        //Can fly( Change to Virtual)
+        //++++++++
+        // 
+
     }
 }

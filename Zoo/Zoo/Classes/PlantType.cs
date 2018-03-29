@@ -14,5 +14,9 @@ namespace Zoo.Classes
 
         public virtual string FireWeakness() => "This Pokeman dose not like Fire";
        
+
+        /// Weak aginst fire OVerride and keep default in the upper level. **at the very bottom
+        /// 
+
     }
 }

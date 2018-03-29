@@ -14,5 +14,9 @@ namespace Zoo.Classes
 
         public virtual string WaterWeakness() => "This Pokeman dose not like water";
         public virtual string Flying() => "This Pokeman can Fly";
+
+        //take out abstract methods in the concrete methods NOT 
+        //allowed to have abstract methods in abstract classes. 
+        // 
     }
 }

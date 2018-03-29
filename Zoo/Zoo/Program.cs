@@ -10,6 +10,8 @@ namespace Zoo
             Console.ReadLine();
 
             //Pokeman yaryar = new Pokeman();// yaryar is the object
+
+
         }
     }
 }
