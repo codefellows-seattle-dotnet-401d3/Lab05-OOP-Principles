@@ -13,18 +13,18 @@ Tiger Hsu
 Build out a structure of a zoo within Visual Studio and a digital diagram.
 Examples are used to under-stand classes in C#.
 
-#Inheritance - One of the main pillars of object oriented programming, closely matches derived.<br>
+##Inheritance - One of the main pillars of object oriented programming, closely matches derived.<br>
 
 Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair}
 
-#polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
+##polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
 to have.
 
 Class Shape.cs -> {x, y, z} / virtual 
                 Class Triangle {using x,y,z} / 
                 Class  Circle {useOnly y } / Override
 
-#Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
+##Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
 Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair} -> GreatGrandChild.cs {unkown color yet}
 
 #encapsulation -> last pillar of Objec Oriented Programming; security apect of it
