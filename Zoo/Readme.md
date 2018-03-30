@@ -17,17 +17,17 @@ Examples are used to under-stand classes in C#.
 
 Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair}
 
-## polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
+<li> polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
 to have.
 
 Class Shape.cs -> {x, y, z} / virtual 
                 Class Triangle {using x,y,z} / 
                 Class  Circle {useOnly y } / Override
 
-## Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
+<li> Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
 Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair} -> GreatGrandChild.cs {unkown color yet}
 
-## Ecapsulation -> last pillar of Objec Oriented Programming; security apect of it
+<li> Ecapsulation -> last pillar of Objec Oriented Programming; security apect of it
 Class Person.cs {}
 Public -> anyone can see person.cs 
 Private -> Private Class person.cs / I dont want anyone to see me
