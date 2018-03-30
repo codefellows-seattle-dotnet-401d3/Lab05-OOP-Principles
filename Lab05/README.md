@@ -1,4 +1,4 @@
-# unit test ATM
+# OOP-Principles
 
 A small app intended to explore the four OOP principles + interfaces
 
@@ -24,6 +24,8 @@ Dragon and ShockerLizzard impliment ItremorSense
 DisplacerBeast and Dragin impliment IDarkvision
 
 In the next lab we then added interfaces to our zoo.
+
+![DnDZoo]DnDZoo.jpg
 
 ## Resources and Links
 
