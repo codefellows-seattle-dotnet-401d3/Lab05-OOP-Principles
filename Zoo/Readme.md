@@ -13,7 +13,7 @@ Tiger Hsu
 Build out a structure of a zoo within Visual Studio and a digital diagram.
 Examples are used to under-stand classes in C#.
 
-## Inheritance - One of the main pillars of object oriented programming, closely matches derived.<br>
+<li> Inheritance - One of the main pillars of object oriented programming, closely matches derived.<br>
 
 Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair}
 
