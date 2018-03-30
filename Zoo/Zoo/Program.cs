@@ -8,8 +8,12 @@ namespace Zoo
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            
+            mybear = 
 
             //Pokeman yaryar = new Pokeman();// yaryar is the object
+
+
         }
     }
 }

@@ -1,23 +1,50 @@
-# Create A Zoo
+## Create A Zoo
 
-## Author
+## Author:
 Tiger Hsu
-Version: 1.0.0
+
+## Version:
+2.0.0 
 
 ## Overview
 Build out a structure of a zoo within Visual Studio and a digital diagram.
-Examples are used to under stand classes in C#.
+Examples are used to under-stand classes in C#.
+
+1 Inheritance - Parent to child 
+2 polymorphism
+3 abstraction
+4 encapsulation
+
 
 ## Getting Started
--Fork this repository
--Run in MS Studio
+- Fork this repo / or clone this repo
+- Download Microsoft Visual Studio Community Edition 2017
+- Open Visual Studio 2017
+- Open this file name 
+- Select run program.cs
 
 ## Example
 
 ![alt text](/Zoo/PokemonSnip.JPG)
 
 ## Architecture
-Console APP using C# 
+This  Program uses C# and the .NET Core 2.0 platform
+
+## Credits
+Aurther Allen <br>
+Kevin Farrow <br>
+Brent William <br>
+Philip Werner <br>
+Josh Taylor <br>
+Amanda Iverson <br>
+
+## Resources
+StackoverFlow
+Microsoft Docs
+
+## License
+MIT License
 
 ## Change Log
-03-26-2018 9:59pm - Added functionalit.
+
+01-01-2001 4:59pm - Added functionality to add and delete some things. -->

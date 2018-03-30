@@ -18,5 +18,11 @@ namespace Zoo.Poke_man
         {
             return true;
         }
+
+        private bool FlyingPokeman()
+        {
+            return true;
+            Console.WriteLine("Charizod can fly");
+        }
     }
 }
