@@ -1,4 +1,7 @@
 ## Create A Zoo
+One of the thing that make C# such a powerful language is the fact that we have object oriented programming. In object oriented programming we have classes. We can have many classes do many different things. One of the ways we are learning is to build out a Zoo which makes a hierarchy class
+with Person.cs-> {properties} -> Policeman.cs -> {properties} -> TrafficCop.cs -> {Policeman properties/Person properties}.
+We are building out a zoo which if filled with animals, each animal has its own objects inside of them with properites. 
 
 ## Author:
 Tiger Hsu
@@ -10,10 +13,26 @@ Tiger Hsu
 Build out a structure of a zoo within Visual Studio and a digital diagram.
 Examples are used to under-stand classes in C#.
 
-1 Inheritance - Parent to child 
-2 polymorphism
-3 abstraction
-4 encapsulation
+#Inheritance - One of the main pillars of object oriented programming, closely matches derived.<br>
+
+Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair}
+
+#polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
+to have.
+
+Class Shape.cs -> {x, y, z} / virtual 
+                Class Triangle {using x,y,z} / 
+                Class  Circle {useOnly y } / Override
+
+#Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
+Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair} -> GreatGrandChild.cs {unkown color yet}
+
+#encapsulation -> last pillar of Objec Oriented Programming; security apect of it
+Class Person.cs {}
+Public -> anyone can see person.cs 
+Private -> Private Class person.cs / I dont want anyone to see me
+Protected Internal -> Only certain things that can be looked at if ou have the access rights.
+
 
 
 ## Getting Started
