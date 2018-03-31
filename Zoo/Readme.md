@@ -14,8 +14,8 @@ Examples are used to under-stand classes in C#.
 <li> Inheritance - One of the main pillars of object oriented programming, closely matches derived
 Think of a parent giving a child blue eyes and black hair. The child inherits the items from the parent.
 
-<li> polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
-to have.
+<li> Polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
+to have. Class shapes can decide to adopt items of properties from derived classes but dont have to. Take for instance a class shape that has the values x,y,z. So the next class triangle has the ability to have a 
 
 Class Shape.cs -> {x, y, z} / virtual 
                 Class Triangle {using x,y,z} / 
