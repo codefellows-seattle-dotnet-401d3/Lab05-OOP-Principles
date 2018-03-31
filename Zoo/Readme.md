@@ -15,22 +15,11 @@ Examples are used to under-stand classes in C#.
 Think of a parent giving a child blue eyes and black hair. The child inherits the items from the parent.
 
 <li> Polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
-to have. Class shapes can decide to adopt items of properties from derived classes but dont have to. Take for instance a class shape that has the values x,y,z. So the next class triangle has the ability to have a 
+to have. Class shapes can decide to adopt items of properties from derived classes but dont have to. Take for instance a class shape that has the values x,y,z. So the next class triangle has the ability to have x y z, but the Circle has only choosen to use the cordinates y instead. This is called virtual methods. 
 
-Class Shape.cs -> {x, y, z} / virtual 
-                Class Triangle {using x,y,z} / 
-                Class  Circle {useOnly y } / Override
-
-<li> Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class
-Class Parent.cs -> {hasblueEyes, hasBlack hair} -> Child.cs {hasblueEyes, hasBlack hair} -> GreatGrandChild.cs {unkown color yet}
-
-<li> Ecapsulation -> last pillar of Objec Oriented Programming; security apect of it
-Class Person.cs {}
-Public -> anyone can see person.cs 
-Private -> Private Class person.cs / I dont want anyone to see me
-Protected Internal -> Only certain things that can be looked at if ou have the access rights.
-
-
+<li> Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class, Say for instance for the parent child that if a parent has blue eyes, and is 6 feet tall. The Child of that abstraction class carries the 6 feet tall jeans and needs to be 6 feet tall.
+  
+<li> Ecapsulation -> last pillar of Objec Oriented Programming; security apect of it these are protected pillars of the; This has protected, private, public, protected private, internal, and protected internal.
 
 ## Getting Started
 - Fork this repo / or clone this repo
@@ -63,4 +52,4 @@ MIT License
 
 ## Change Log
 
-01-01-2001 4:59pm - Added functionality to add and delete some things. -->
+03-30-2001 7:53pm
