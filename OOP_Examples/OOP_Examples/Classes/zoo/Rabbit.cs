@@ -4,7 +4,7 @@ namespace OOP_Examples.Classes.zoo
 {
 	class Rabbit : Langomorph
 	{
-        new string Food { get; set; } = "vegitarian";
+        new string Food { get; set; } = "vegetarian";
         public Sleep RabbitSleep { get; set; } = Sleep.diurnal;
         public Size RabbitSize { get; set; } = Size.small;
         public override int Cute { get; set; } = 10; // Override Langomorph baseline
