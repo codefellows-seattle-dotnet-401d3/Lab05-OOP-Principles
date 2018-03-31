@@ -1,7 +1,5 @@
 ## Create A Zoo
 One of the thing that make C# such a powerful language is the fact that we have object oriented programming. In object oriented programming we have classes. We can have many classes do many different things. One of the ways we are learning is to build out a Zoo which makes a hierarchy class
-with Person.cs-> {properties} -> Policeman.cs -> {properties} -> TrafficCop.cs -> {Policeman properties/Person properties}.
-We are building out a zoo which if filled with animals, each animal has its own objects inside of them with properites. 
 
 ## Author:
 Tiger Hsu
