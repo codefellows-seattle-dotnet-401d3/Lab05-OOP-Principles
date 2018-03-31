@@ -2,7 +2,7 @@
 
 **Author**: Arthur Allen
 
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Version**: 1.3.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 401 class. (i.e. What's your problem domain?) -->
@@ -15,6 +15,7 @@ Draw IO
 
 ## Example
 <!-- Show them what looks like and how to use the application.  -->
+The program just runs throgh, demonstrating what the classes do.
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
@@ -28,3 +29,4 @@ C#, classes
 3-30-2018 5:36pm - Main build pushed up.  Still need update the diagram to match the actual classes, add test methods and try/catch.
 3-31-2018 9:22am - Elements match between diagram and program. Now I need to clarify the labeles in the diagram.
 3-31-2018 10:00am - Diagram clarified, need to do unit tests and more try/catch.
+3-31-2018 10:10am - Lab code removed.  README updated.  I'll do unit test on request.  I need to get caught up on other projects first.
