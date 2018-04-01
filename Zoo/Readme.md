@@ -5,21 +5,21 @@ One of the thing that make C# such a powerful language is the fact that we have 
 Tiger Hsu
 
 ## Version:
-2.0.0 
+3.0.0 
 
 ## Overview
 Build out a structure of a zoo within Visual Studio and a digital diagram.
 Examples are used to under-stand classes in C#.
 
-<li> Inheritance - One of the main pillars of object oriented programming, closely matches derived
-Think of a parent giving a child blue eyes and black hair. The child inherits the items from the parent.
+<li> Inheritance - One of the main pillars of object oriented programming, closely matches derived classes. Example on the hierarchy Pokemon all bottom concrete Pokemon have inherited values such a properties and methods from previous levels. bulbasuar inheritances traits from plant type Pokemon as well as the overall Pokemon class. <br>
 
-<li> Polymorphism - Another pillar of object oriented, instead of direct inheritence can pick an choose which methods and properties 
-to have. Class shapes can decide to adopt items of properties from derived classes but dont have to. Take for instance a class shape that has the values x,y,z. So the next class triangle has the ability to have x y z, but the Circle has only choosen to use the cordinates y instead. This is called virtual methods. 
+<li> Polymorphism- Another pillar of object oriented is there are two distinct ways, abstract methods and virtual methods. When classes inherit and abstract is used then the inherited class must either use the abstract method or decide to override with a different value.
+Example is that in my Pokemon all Fire type Pokemon have a methods which allows them to fly, however only charmander is Override which makes him unable to fly.<br>
+<li>Virtual Methods- are values which can be applied to classes if the need exists. In the water-type pokemon war -turtle has the virtual method of bubble base if he wants. <br>
 
-<li> Abstraction -Pillar of Ojbect Oriented programming, classes can inherit later on but must be filled out by each class, Say for instance for the parent child that if a parent has blue eyes, and is 6 feet tall. The Child of that abstraction class carries the 6 feet tall jeans and needs to be 6 feet tall.
+<li> Abstraction -As mentioned above when classes have inherit values then the child classes must use those methods. An example in all the Fire-type Pokemon they all have the ability to fly which is an abstract method. The one key give away is that Charmander is overriden in order to prevent him from flying.
   
-<li> Ecapsulation -> last pillar of Objec Oriented Programming; security apect of it these are protected pillars of the; This has protected, private, public, protected private, internal, and protected internal.
+<li> Ecapsulation -> This the the last layer of the object oriented class, you have public, private, protected, protected internal, protected private. This prevents any of the other classes from accessing other values.  Fire-type Classes cannot access water-type methods, this is known as encapsulation. 
 
 ## Getting Started
 - Fork this repo / or clone this repo
@@ -52,4 +52,4 @@ MIT License
 
 ## Change Log
 
-03-30-2018 7:53pm
+04-1-2018 7:53pm
