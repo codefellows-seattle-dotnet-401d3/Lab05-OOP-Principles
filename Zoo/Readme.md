@@ -30,7 +30,7 @@ to have. Class shapes can decide to adopt items of properties from derived class
 
 ## Example
 
-![alt text](/Zoo/PokemonSnip.JPG)
+![alt text](/Zoo/PokeMan.jpg)
 
 ## Architecture
 This  Program uses C# and the .NET Core 2.0 platform
