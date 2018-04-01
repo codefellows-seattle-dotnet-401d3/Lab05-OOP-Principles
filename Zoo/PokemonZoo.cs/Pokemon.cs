@@ -8,8 +8,8 @@ namespace PokemonZoo.cs
     {
         //properties of all the pokemon
         public abstract string Name { get; set; }
-        protected abstract int Health { get; set; }
-        protected abstract string Attack { get; set;}
+        public abstract int Health { get; set; }
+        public abstract string Attack { get; set;}
         public abstract string Weakness { get; set; }
 
         //methods for all pokemon
