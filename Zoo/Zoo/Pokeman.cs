@@ -12,7 +12,10 @@ namespace Zoo
         public abstract int HitPoints { get; set;}
         public abstract string Attack { get; set; }
 
-        public abstract bool CatchThemAll();
+        public bool CatchThemAll()
+        {
+            return catchable;
+        }
 
         // Need to test out problems and see if you can 
         //one assert per method. 
