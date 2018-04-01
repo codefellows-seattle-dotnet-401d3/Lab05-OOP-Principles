@@ -4,15 +4,28 @@ using System.Text;
 
 namespace Zoo
 {
-    abstract class Pokeman
+    public abstract class Pokemon
     {
 
-        public abstract int Height { get; set; }
-        public abstract int Weight { get; set; }
-        public abstract int HitPoints { get; set;}
-        public abstract string Attack { get; set; }
+        public abstract int Health { get; set; }
+        public abstract string ElementalStrength { get; set; }
 
+ 
         public abstract bool CatchThemAll();
+
+        public string Attack()
+        {
+            return Attack();
+        }
+
+        public bool Catchable()
+        {
+            return "gotcha"
+        }
+
+
+
+
 
         // Need to test out problems and see if you can 
         //one assert per method. 
