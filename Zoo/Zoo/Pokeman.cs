@@ -14,7 +14,7 @@ namespace Zoo
 
         public bool CatchThemAll()
         {
-            return catchable;
+            return true;
         }
 
         // Need to test out problems and see if you can 

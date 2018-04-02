@@ -8,7 +8,7 @@ namespace PokemonZoo.cs
     {
         //Properties for water type Pokemon
         public override string Weakness { get; set; } = "Plants";
-
+        
 
         //methods for water type Pokemon
         public virtual string BubbleAttack()
