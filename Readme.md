@@ -1,86 +1,65 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Lab 5 : I Built A Zoo!
-=====================================
+# Lab05 Phil Werner
 
-## To Submit this Assignment
-- fork this repository
-- create a new branch named `lab05-`; + `<your name>` **e.g.** `lab05-amanda`
-- write your code
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
-- Include a Readme.md (contents described below)
+## Build A Zoo
+A program to show how Class inheritence works. There is a base Animal
+Class that the Mammal, Reptile and Avian classes inherit from. Those
+Classes both have additional classes that inherit from them. See the below
+diagram for a more in depth inheritence flow.
 
-## Directions
-Your job is to build out a structure of a zoo within Visual Studio and a digital diagram. Have fun with this project, No need to study 
-or research the scientific names of the animals, kepe it simple (i.e. Animal, Mammel, Reptile, Bird, Dog, Fish, etc...)
+## OOP Principles
+1. Inheritence - Classes derive properties from the base class or other classes
+above it in the heirarchy. If the class ```Animal``` has a property of ```NumberOfLegs```,
+the class ```Mammal``` "inherits" that property from it.
 
-Using all 4 of the Object Oriented Principles (OOPs): 
-1. Build out the hierarchical class structure of a zoo within Visual Studio and a digital diagram. 
-2. There should be at least 3 layers of inheritance with at least 6 different types of animals. 
-3. Prove that the OOP principles are being used by returning strings as neccesary to prove that a methods were propertly  implemented or inherited.
-4. Examples include: `Eat()` `Sleep()` `Sound()` etc... 
-5. You are allowed to use these example methods, along with others not listed
-6. Be sure to include a diagram with your solution of how your zoo is mapped out. 
-7. Include the following labels:
-	1. Label the parent and derived classes
-	2. Label the abstract classes and concrete classes
-	3. Label the access modifiers for each of the classes
-	4. Label where you are using Polymorphism in your program. Where are the virtual and abstract methods defined, and where are they being overridden?
+2. Abatraction - Sometimes a class will have properties or methods that there is not
+yet enough information for it yet. So you can then create a Abstract class that cannot
+be instantiated, because of the lack of information. These abstract classes can also
+have abstract properties or methods, which need to be overrided at or before the first
+Concrete class.
 
+3. Polymorphism - This occurs during override, it is the concept that multiple classes
+can have the same property or method, but it might be different for all the different
+derived classes.
 
-## Components
-- Have at least 3 different abstract classes
-- Have at least 3 layers of inheritance
-- Have at least 4 abstract methods (make sure you override them)
-- Have at least 4 virtual methods (make sure you override them)
+4. Encapsulation - The grouping of properties and methods within a single object/class.
+This gives us the ability to create private properties within our classes. 
 
-Your readme is extremely important in this lab because it will be a guide for us to know exactly what you did where and how. 
-Define for me, in your readme, in addition to what is described below:
-1. The definitions of each of the OOP principles (in your own words), 
-2. A **couple** examples (you do not have to write all occurances out) where you are practing each of the OOP principles. 
+## Tools Used
+Microsoft Visual Studio Community Version 15.5.7
 
-Your program class should instantiate each of the concrete animals to prove that the functionality for each of the animals is as desired. 
+C#
 
-## Example
-Please refer to the included diagram and code base as an example of the expectiation. 
+ASP.Net
 
-## ReadMe
-A README is a module consumer's first -- and maybe only -- look into your creation. The consumer wants a module to fulfill their need, so you must explain exactly what need your module fills, and how effectively it does so.
-<br />
-Your job is to
-1. tell them what it is (with context)
-1. Show where each of the OOP principles are being used
-2. show them what it looks like in action
-3. show them how they use it
-4. tell them any other relevant details
-<br />
+xUnit
 
-This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. 
-Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
+## Getting Started
 
-<br /> Refer to the sample-README in the class repo for an example. 
-- [Reference](https://github.com/noffle/art-of-readme)
+Clone this repository to your local machine.
+```
+$ git clone 
+```
+Once downloaded, cd into the ```Lab05-OOP-Principles``` directory.
+```
+$ cd Lab05-OOP-Principles
+```
+The cd into ```BuildAZoo``` directory.
+```
+$ cd BuildAZoo
+```
+The cd into the second ```BuildAZoo``` directory.
+```
+$ cd BuildAZoo
+```
+Then run .NET build.
+```
+$ dotnet build
+```
+Once that is complete, run the program.
+```
+$ dotnet run
+```
 
+## Diagram Of Inheritence
 
-## Rubric
-- 7pts: Program meets all requirements described in Lab directions
-
-	Points  | Reasoning | 
-	 ------------ | :-----------: | 
-	7       | Program runs as expected, no exceptions during execution // Documenation and OOP implemenation exactly as required |
-	5       | Program runs/compiles, Some implementation errors with OOP principles // Diagram shows some implementation errors|
-	4       | Program runs/compiles // Digital Diagram missing approx. half of the required labels // Improper use of OOP principles |
-	2       | Missing tests // tests are not passing // not enough valid tests |
-	2       | Missing Readme Document // Readme Document does not meet standards |
-	0       | Program does not compile/run. Build Errors. |
-	0       | No Submission |
-
-- 3pts: Code meets industry standards
-	- These points are only awardable if you score at minimum a 5/7 on above criteria
-
-	Points  | Reasoning | 
-	 ------------ | :-----------: | 
-	3       | Code meets Industry Standards // methods and variables namings are appropriate // Selective and iterative statements are used appropriately, Fundamentals are propertly executed // Clearly and cleanly commented |
-	2       | syntax for naming conventions are not correct (camelCasing and PascalCasing are used appropriately) // slight errors in use of fundamentals // Missing some comments |
-	1       | Inappropriate naming conventions, and/or inappropriate use of fundamentals // Code is not commented  |
-	0       | No Submission or incomplete submission |
+![Build A Zoo Diagram](https://github.com/philipwerner/Lab05-OOP-Principles/blob/lab05-phil/OOP_Examples/BuildAZoo.jpg)
