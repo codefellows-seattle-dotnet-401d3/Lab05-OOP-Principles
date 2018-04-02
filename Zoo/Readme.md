@@ -28,9 +28,13 @@ Example is that in my Pokemon all Fire type Pokemon have a methods which allows 
 - Open this file name 
 - Select run program.cs
 
-## Example
+## This is a Pokeman Diagram
 
 ![alt text](/Zoo/PokeMan.jpg)
+
+## Example on Console
+
+![alt text](/Zoo/Pokemanexample.JPG)
 
 ## Architecture
 This  Program uses C# and the .NET Core 2.0 platform
