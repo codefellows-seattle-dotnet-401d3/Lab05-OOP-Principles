@@ -4,11 +4,11 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    abstract class Avian : Animal
+    public abstract class Avian : Animal
     {
         public virtual bool HasWings { get; set; } = true;
 
-        public abstract bool Fly();
+        public abstract bool CanFly();
         public virtual string Caws()
         {
             return "Caw";

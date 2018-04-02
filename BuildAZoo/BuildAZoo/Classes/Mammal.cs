@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    abstract class Mammal : Animal
+    public abstract class Mammal : Animal
     {
         public override int NumberOfLegs { get; set; } = 4;
         public abstract string FurColor { get; set; }
