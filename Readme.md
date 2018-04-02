@@ -1,86 +1,82 @@
-![cf](http://i.imgur.com/7v5ASc8.png) Lab 5 : I Built A Zoo!
-=====================================
+# Brent's Magical Zoo
+## overview
+The goal was to build a zoo of animal to demonstrate the OOP principles of abstraction, inheritance, encapsulation, and polymorphism. This has no practical application.
 
-## To Submit this Assignment
-- fork this repository
-- create a new branch named `lab05-`; + `<your name>` **e.g.** `lab05-amanda`
-- write your code
-- push to your repository
-- submit a pull request to this repository
-- submit a link to your PR in canvas
-- Include a Readme.md (contents described below)
+## use
+Currently, the application has no purpose or use case. If you wish to implement these classes in a zoological progect, you will need to grab all the classes to be certain you follow the complete inheritence tree.
 
-## Directions
-Your job is to build out a structure of a zoo within Visual Studio and a digital diagram. Have fun with this project, No need to study 
-or research the scientific names of the animals, kepe it simple (i.e. Animal, Mammel, Reptile, Bird, Dog, Fish, etc...)
+## Architecture
+The project is built to demonstrate the OOP priciples. The four principles are Abstraction, Encapsulation, Inheritance, and Polymorphism.
 
-Using all 4 of the Object Oriented Principles (OOPs): 
-1. Build out the hierarchical class structure of a zoo within Visual Studio and a digital diagram. 
-2. There should be at least 3 layers of inheritance with at least 6 different types of animals. 
-3. Prove that the OOP principles are being used by returning strings as neccesary to prove that a methods were propertly  implemented or inherited.
-4. Examples include: `Eat()` `Sleep()` `Sound()` etc... 
-5. You are allowed to use these example methods, along with others not listed
-6. Be sure to include a diagram with your solution of how your zoo is mapped out. 
-7. Include the following labels:
-	1. Label the parent and derived classes
-	2. Label the abstract classes and concrete classes
-	3. Label the access modifiers for each of the classes
-	4. Label where you are using Polymorphism in your program. Where are the virtual and abstract methods defined, and where are they being overridden?
+### Principles
+#### Encapsulation
+Encapsulation is the restriction of access/modification of properties and methods. Perhaps the cleanest example in this application is the Hydra and its heads. Anyone can look at a hydra and see how many heads it has, but to change the number of heads a hydra has you must invoke the `CutOffHead` method upon that hydra. That method requires in input parameter because the hydra's behavior is different depending upon how its head is cut off. By controlling access to the hydra's heads, I can force behavior to occur in the manner and under the conditions I desire.
 
+#### Abstraction
+Abstraction is, in brief, saying you want a thing to exist without caring about the details of what it is. For example, my Imaginary class says every imaginary item must have a Source(), but does not care what that source is. Further, Imaginary can have that abstraction because it is abstract itself - by the time we get to a class that can actually produce objects those abstractions have to be resolved.
 
-## Components
-- Have at least 3 different abstract classes
-- Have at least 3 layers of inheritance
-- Have at least 4 abstract methods (make sure you override them)
-- Have at least 4 virtual methods (make sure you override them)
+#### Inheritance
+The entire exercise is based upon inheritance. Specifically, all things in this "zoo" derive from the base class imaginary. To trace one specific lineage as an example, Dragon inherits from Lizard inherits from Animal inherits from Living inherits from Imaginary. This means Dragon has the behavior/requirements of being an Imaginary, Living, Lizard Animal AND any new code specific to being a dragon.
 
-Your readme is extremely important in this lab because it will be a guide for us to know exactly what you did where and how. 
-Define for me, in your readme, in addition to what is described below:
-1. The definitions of each of the OOP principles (in your own words), 
-2. A **couple** examples (you do not have to write all occurances out) where you are practing each of the OOP principles. 
+#### Polymorphism
+Polymorphism, the final pillar of OOP. Polymorphism is the way one thing can have several different forms. As an example, my to move around and possess some form of Locomotion, but I don't care beyond that they must possess that method. The details are worked out later, further down the inheritance heirarchy. Indeed, I expect several animals to have completely different Locomotion() methods.
+### Classes
+#### Base abstract
+Imaginary
+This is the base class in the tree. It defines all derived classes as
+- Having a property Exists = false;
+- Having some form of a Sustanance() method // what does it eat? (1 abstract method)
+- Having some form of a Size propterty //)
+- Having some form of a Source() method // a mythological sources for the idea of the thing (2 abstract methods)
 
-Your program class should instantiate each of the concrete animals to prove that the functionality for each of the animals is as desired. 
+#### First derived abstract
+Living
+- Derives from Imaginary
+- Adds a new Lifespan property (abstract)
 
-## Example
-Please refer to the included diagram and code base as an example of the expectiation. 
+Undead
+- Derives from Imaginary
+- Adds virtual Base property of "human"// Most undead are human, but an undead dragon (for example) is seen in lore.
+- Overrides size with "Depends on the base"
+- Adds virtual Basis() method // Most undead were once a single living creature, but some are otherwise.
+- Adds abstract SlainBy[] property
 
-## ReadMe
-A README is a module consumer's first -- and maybe only -- look into your creation. The consumer wants a module to fulfill their need, so you must explain exactly what need your module fills, and how effectively it does so.
-<br />
-Your job is to
-1. tell them what it is (with context)
-1. Show where each of the OOP principles are being used
-2. show them what it looks like in action
-3. show them how they use it
-4. tell them any other relevant details
-<br />
+#### Second derived abstract
+Animal
+- derives from living
+- adds virtual property Legs as 4
+- adds virual property Heads as 1
+- adds absract method of Locomotion() (3rd abstract method)
 
-This is ***your*** job. It's up to the module creator to prove that their work is a shining gem in the sea of slipshod modules. 
-Since so many developers' eyes will find their way to your README before anything else, quality here is your public-facing measure of your work.
+Plant
+- derives from living
+- Overrides Sustanance() with a new method that returns "sunlight"
+- Overrides lifespan with indefinite. The mythological plants in my zoo don't die from age.
 
-<br /> Refer to the sample-README in the class repo for an example. 
-- [Reference](https://github.com/noffle/art-of-readme)
+Sentient_Undead
+- derives from Undead
+- adds abstract Name property
+- adds abstract weaknesses[] property
 
+#### Third derived abstract
+Mammal
+- derives from Animal
+- Adds property blooded of "warm"
 
-## Rubric
-- 7pts: Program meets all requirements described in Lab directions
+Lizard
+- derives from Animal
+- adds property LaysEggs of true
+- adds property HasScales of true
 
-	Points  | Reasoning | 
-	 ------------ | :-----------: | 
-	7       | Program runs as expected, no exceptions during execution // Documenation and OOP implemenation exactly as required |
-	5       | Program runs/compiles, Some implementation errors with OOP principles // Diagram shows some implementation errors|
-	4       | Program runs/compiles // Digital Diagram missing approx. half of the required labels // Improper use of OOP principles |
-	2       | Missing tests // tests are not passing // not enough valid tests |
-	2       | Missing Readme Document // Readme Document does not meet standards |
-	0       | Program does not compile/run. Build Errors. |
-	0       | No Submission |
+#### Concrete classes
+- DevilsSnare derives from Plant
+- Ent derives from Plant
+- Dragon derives from Lizard
+- Hydra derives from Lizard
+- Cerebus derives from Mammal
+- Zombie derives from Undead
+- Vampire derives from Sentient_Undead
+- Lich derives from Sentient_Undead
 
-- 3pts: Code meets industry standards
-	- These points are only awardable if you score at minimum a 5/7 on above criteria
-
-	Points  | Reasoning | 
-	 ------------ | :-----------: | 
-	3       | Code meets Industry Standards // methods and variables namings are appropriate // Selective and iterative statements are used appropriately, Fundamentals are propertly executed // Clearly and cleanly commented |
-	2       | syntax for naming conventions are not correct (camelCasing and PascalCasing are used appropriately) // slight errors in use of fundamentals // Missing some comments |
-	1       | Inappropriate naming conventions, and/or inappropriate use of fundamentals // Code is not commented  |
-	0       | No Submission or incomplete submission |
+## Sources
+Wikipedia confirmed some information about the source material and especially the publication dates.
