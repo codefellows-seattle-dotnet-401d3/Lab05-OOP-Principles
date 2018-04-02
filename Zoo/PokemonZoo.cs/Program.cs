@@ -44,7 +44,6 @@ namespace PokemonZoo.cs
 
             //squritle
             Squritle s = new Squritle();
-            
             Console.WriteLine($"{s.Name} + {s.Health}+ {s.Attack}");
             s.Tackle();
             s.BubbleAttack();
@@ -53,16 +52,22 @@ namespace PokemonZoo.cs
             //bulbasuar
             Bulbasuar b = new Bulbasuar();
             Console.WriteLine($"{b.Name}+ {b.Health}+ {b.Weakness}");
+            b.CanEvolve();
+            b.Catchable();
             Console.ReadLine();
 
             //picachu
             Picachu p = new Picachu();
             Console.WriteLine($"{p.Name} + {p.Health} + {p.Attack}+ {p.Weakness}");
+            p.CanEvolve();
+            p.Catchable();
             Console.ReadLine();
 
             //Ivysaur
             Ivysauer i = new Ivysauer();
-            Console.WriteLine($"{i.Name} + {i.Health} + {i.Attack}");
+            Console.WriteLine($"{i.Name} + {i.Health} + {i.Attack}+ {i.Weakness}");
+            i.CanEvolve();
+            i.Catchable();
             Console.ReadLine();
             Console.ReadKey();
 
