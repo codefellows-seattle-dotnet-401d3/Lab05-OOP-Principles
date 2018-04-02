@@ -9,6 +9,6 @@ namespace PokemonZoo.cs.NewFolder
         public override string Name { get; set; } = "picahu";
         public override int Health { get; set; } = 100;
         public override string Attack { get; set; } = "shock";
-        public override string Weakness { get; set; } = "ASh KEtchup";
+        public override string Weakness { get; set; } = "Ash Ketchup";
     }
 }

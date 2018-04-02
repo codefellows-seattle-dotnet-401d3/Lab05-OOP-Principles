@@ -12,7 +12,8 @@ namespace PokemonZoo.cs
 
         public override string BubbleAttack()
         {
-            return "Shoots water";
+            Console.WriteLine("Shooting Water bubbles");
+            return "Shoots water!!!";
         }
 
     }

@@ -15,11 +15,13 @@ namespace PokemonZoo.cs
         //methods for all pokemon
         public virtual string CanEvolve()
         {
+            Console.WriteLine("This Pokemon need to level up");
             return "this pokemon not yet leveled up";
         }
 
         public virtual string Catchable()
         {
+            Console.WriteLine("This Pokemon needs to be caught!");
             return "this pokemon has been caught";
         }
 
