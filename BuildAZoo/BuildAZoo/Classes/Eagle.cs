@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BuildAZoo
+namespace BuildAZoo.Classes
 {
-    public class Duck : Avian
+    public class Eagle : Avian
     {
         public override int NumberOfLegs { get; set; } = 2;
         public override bool Carnivore { get; set; } = true;
@@ -22,7 +22,7 @@ namespace BuildAZoo
 
         public override string Caws()
         {
-            return "Quack";
+            return "Merica";
         }
 
         public override bool CanFly()

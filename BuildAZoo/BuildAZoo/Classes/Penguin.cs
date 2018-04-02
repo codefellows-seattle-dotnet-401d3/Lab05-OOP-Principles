@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    class Penguin : Avian
+    public class Penguin : Avian
     {
         public override int NumberOfLegs { get; set; } = 2;
         public override bool Carnivore { get; set; } = true;
@@ -25,7 +25,7 @@ namespace BuildAZoo
             return "Squawk";
         }
 
-        public override bool Fly()
+        public override bool CanFly()
         {
             return false;
         }

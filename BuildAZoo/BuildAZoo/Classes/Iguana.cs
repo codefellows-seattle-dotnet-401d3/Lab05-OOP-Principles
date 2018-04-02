@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    class Iguana : Lizard
+    public class Iguana : Lizard
     {
         public override bool LooksSlimey { get; set; } = false;
 

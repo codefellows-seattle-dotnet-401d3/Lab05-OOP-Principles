@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    class Python : Snake
+    public class Python : Snake
     {
         public override string Eat()
         {

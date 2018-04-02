@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BuildAZoo
 {
-    class Lion : Mammal
+    public class Lion : Mammal
     {
         public override bool Carnivore { get; set; } = true;
         public override string FurColor { get; set; } = "yellow";
