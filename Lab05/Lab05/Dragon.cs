@@ -6,9 +6,9 @@ namespace Lab05
 {
     public class Dragon : Fiend, IDarkvision, ITremorSense
     {
-        public override string Name { get; } = "DisplacerBeast";
+        public override string Name { get; } = "Dragon";
         public override int HP { get; set; } = 120;
-        public override string SubType { get; set; }
+        public override string SubType { get; set; } = "Dragon";
         public override string Immunity { get; set; } = "Fire, Poison";
         public override string NativePlane => base.NativePlane;
         protected override bool Hostile { get => base.Hostile; set => base.Hostile = value; }
