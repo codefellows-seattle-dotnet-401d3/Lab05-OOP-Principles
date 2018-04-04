@@ -14,5 +14,15 @@ namespace Lab05
             Console.WriteLine(testDragon.NativePlane);
             Console.ReadLine();
         }
+
+        public IDarkvision Darkpass(IDarkvision dark)
+        {
+            return dark;
+        }
+
+        public IDarkvision Tremorpass(IDarkvision tremor)
+        {
+            return tremor;
+        }
     }
 }
